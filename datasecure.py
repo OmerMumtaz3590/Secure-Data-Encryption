@@ -60,7 +60,7 @@ stored_data = load_data()
 # == navigation bar ===
 st.title(" 🔐 Secure Data Encryption System")
 menu = ["Home", "Register", "Login", "Store Data", "Retrieve Data"]
-choice = st.sidebar.section("Navigation", menu)
+choice = st.sidebar.selectbox("Navigation", menu)
 
 if choice == "Home":
     st.subheader(" Welcome to my Secure Data Encryption System Using Streamlit !")
